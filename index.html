@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Vorstellung | Start</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Unser Team</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hauptnavigation"
+                aria-controls="hauptnavigation" aria-expanded="false" aria-label="Navigation öffnen">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="hauptnavigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <p class="eyebrow">Zwei Menschen, ein Team</p>
+                    <h1>Hallo! Schön, dass du da bist.</h1>
+                    <p class="lead">Wir sind [Romy] und [Emilia]. Auf dieser Website erzählen wir ein bisschen über uns und unser gemeinsames Projekt.</p>
+                    <p id="begrussung" class="small-note">Willkommen auf unserer Seite!</p>
+                    <a class="btn btn-coral" href="about.html">Lerne uns kennen</a>
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid hero-image" src="img/team.svg" alt="Illustration von zwei Teammitgliedern">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <div class="section-heading">
+                <p class="eyebrow">Unser Projekt</p>
+                <h2>Was uns verbindet</h2>
+                <p>Ersetzt diesen Text durch zwei oder drei Sätze über eure Zusammenarbeit und euer Ziel.</p>
+            </div>
+
+            <!-- Interaktives Element 1: Bootstrap-Karussell mit Projekteinblicken -->
+            <div id="projektKarussell" class="carousel slide project-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projektKarussell" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Einblick 1"></button>
+                    <button type="button" data-bs-target="#projektKarussell" data-bs-slide-to="1" aria-label="Einblick 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-card">
+                            <span class="number-badge">01</span>
+                            <h3>Unsere Idee</h3>
+                            <p>Beschreibt hier kurz, woran ihr arbeitet und warum euch das Thema gefällt.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card coral-card">
+                            <span class="number-badge">02</span>
+                            <h3>So arbeiten wir</h3>
+                            <p>Zum Beispiel: gemeinsam planen, abwechselnd programmieren und gegenseitig testen.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projektKarussell" data-bs-slide="prev" aria-label="Vorheriger Einblick">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projektKarussell" data-bs-slide="next" aria-label="Nächster Einblick">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="soft-section py-5">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Kleine Fakten</p>
+                    <h2>Was wir gerne machen</h2>
+                </div>
+                <!-- Interaktives Element 2: Bootstrap-Akkordeon -->
+                <div class="accordion simple-accordion" id="faktenAkkordeon">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faktEins" aria-expanded="true" aria-controls="faktEins">Das machen wir gern</button></h3>
+                        <div id="faktEins" class="accordion-collapse collapse show" data-bs-parent="#faktenAkkordeon"><div class="accordion-body">[Hobby, Musik, Sport oder andere gemeinsame Interessen eintragen.]</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faktZwei" aria-expanded="false" aria-controls="faktZwei">Das möchten wir lernen</button></h3>
+                        <div id="faktZwei" class="accordion-collapse collapse" data-bs-parent="#faktenAkkordeon"><div class="accordion-body">[Was möchtet ihr in diesem Projekt über Webentwicklung lernen?]</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span>Unser Team · Clientseitige Programmierung</span><a href="contact.html">Kontakt aufnehmen</a></div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
